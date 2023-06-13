@@ -14,8 +14,8 @@ import lombok.ToString;
 public class Teacher extends User{
 
     private String subject; // предмет
-    public Teacher(Long id, String fullName, Integer age, String phoneNumber) {
-        super(id, fullName, age, phoneNumber);
+    public Teacher(Long id, String fullName, Integer age, String phoneNumber, String groupId) {
+        super(id, fullName, age, phoneNumber, groupId);
     }
 
 

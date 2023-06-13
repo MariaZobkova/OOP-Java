@@ -18,9 +18,9 @@ public class StudentService implements UserService<Student> {
 
 
     @Override
-    public void create(String fullName, Integer age, String phoneNumber) {
+    public void create(String fullName, Integer age, String phoneNumber, String groupId) {
         Long id =studentRepository.getMaxId() + 1;
-        Student student = new Student(id, fullName, age, phoneNumber);
+        Student student = new Student(id, fullName, age, phoneNumber, groupId);
         studentRepository.add(student);
     }
 

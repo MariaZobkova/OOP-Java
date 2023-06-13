@@ -1,11 +1,12 @@
 package HomeWork4.repository;
 
 import HomeWork4.model.Teacher;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+@Data
 public class TeacherRepository implements UserRepository<Teacher> {
     private final List <Teacher> teachers;
 

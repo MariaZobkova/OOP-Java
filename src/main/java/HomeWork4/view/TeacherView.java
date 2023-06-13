@@ -36,8 +36,8 @@ public class TeacherView implements UserView<Teacher> {
     }
 
     @Override
-    public void create(String fullName, Integer age, String phoneNumber) {
-        controller.create(fullName, age, phoneNumber);
+    public void create(String fullName, Integer age, String phoneNumber, String groupId) {
+        controller.create(fullName, age, phoneNumber, groupId);
     }
 
     @Override

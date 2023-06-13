@@ -5,7 +5,7 @@ import HomeWork4.service.TeacherServise;
 import lombok.Data;
 
 import java.util.List;
-@Data
+
 public class TeacherController implements UserController<Teacher> {
 
     public final TeacherServise teacherServise;
@@ -15,8 +15,8 @@ public class TeacherController implements UserController<Teacher> {
     }
 
     @Override
-    public void create(String fullName, Integer age, String phoneNumber) {
-        teacherServise.create(fullName, age, phoneNumber);
+    public void create(String fullName, Integer age, String phoneNumber, String groupId) {
+        teacherServise.create(fullName, age, phoneNumber, groupId);
     }
 
     @Override

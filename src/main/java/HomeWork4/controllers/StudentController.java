@@ -16,8 +16,8 @@ public class StudentController implements UserController<Student> {
     }
 
     @Override
-    public void create(String fullName, Integer age, String phoneNumber) {
-        studentService.create(fullName, age, phoneNumber);
+    public void create(String fullName, Integer age, String phoneNumber, String groupId) {
+        studentService.create(fullName, age, phoneNumber, groupId);
     }
 
     @Override
